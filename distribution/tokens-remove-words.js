@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 //     wink-nlp-utils
 //     NLP Functions for amplifying negations, managing elisions,
@@ -25,8 +25,8 @@
 
 //
 
-var defaultStopWords = require('./dictionaries/stop_words.json');
-var words = require('./helper-return-words-filter.js');
+var defaultStopWords = require("./stop_words.json");
+var words = require("./helper-return-words-filter.js");
 defaultStopWords = words(defaultStopWords);
 
 // ## tokens

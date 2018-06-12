@@ -23,9 +23,9 @@
 
 //
 
-var defaultStopWords = require( './dictionaries/stop_words.json' );
-var words = require( './helper-return-words-filter.js' );
-defaultStopWords = words( defaultStopWords );
+var defaultStopWords = require("./stop_words.json");
+var words = require("./helper-return-words-filter.js");
+defaultStopWords = words(defaultStopWords);
 
 // ## tokens
 
@@ -44,9 +44,9 @@ defaultStopWords = words( defaultStopWords );
  * removeWords( [ 'this', 'is', 'a', 'cat' ] );
  * // -> [ 'cat' ]
  */
-var removeWords = function ( tokens, stopWords ) {
-  var givenStopWords = ( stopWords || defaultStopWords );
-  return tokens.filter( givenStopWords.exclude );
+var removeWords = function(tokens, stopWords) {
+  var givenStopWords = stopWords || defaultStopWords;
+  return tokens.filter(givenStopWords.exclude);
 }; // removeWords()
 
 module.exports = removeWords;
