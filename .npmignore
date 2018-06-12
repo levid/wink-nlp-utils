@@ -1,5 +1,6 @@
 test
 docs
+src
 sourcedocs
 .eslintrc.json
 .jshintrc
